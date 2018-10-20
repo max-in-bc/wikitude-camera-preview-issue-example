@@ -1,0 +1,165 @@
+#header {
+    // background: $black-transparent;
+    background: transparent;
+    height: 10% !important;
+    color: white;
+    text-shadow: 0 0 4px black;
+    margin: unset;
+    box-shadow: unset;
+    border: unset;
+    border-radius: unset;
+    min-height: unset;
+    pointer-events: auto;
+
+    &.android {
+        top: 15px;
+    }
+
+    span.ionicons {
+        color: white;
+        font-size: 2.4em;
+    }
+
+    div.container-fluid {
+        height: 100%;
+        padding: unset;
+        div.row {
+            height: inherit;
+            margin: unset;
+            div.col-xs-4 {
+                height: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: unset;
+
+                &.title {
+                    flex-direction: column;
+                    div.row {
+                        height: 100%;
+                        width: 100%;
+                        margin: unset;
+                        >div.col-xs-12 {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: unset;
+                            &.main-title {
+                                font-size: 2vh;
+                                p {
+                                    max-width: 100%;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                            &.subtitle {
+                                align-items: flex-start;
+                                font-size: 1.7vh;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                p {
+                                    max-width: 100%;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    &::before {
+                                        content: '(';
+                                    }
+                                    &::after {
+                                        content: ')'
+                                    }
+                                }
+                            }
+                            p {
+                                margin: unset;
+                            }
+                        }
+                    }
+                }
+
+                &.circles {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .circle {
+                        $size: calc(3vw + 3vh);
+                        height: $size;
+                        min-height: $size;                        
+                        width: $size;
+                        min-width: $size;                        
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        margin-left: 3px;
+                        margin-right: 3px;
+                        overflow: hidden;
+                        background: white;
+                        > img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            &.experience {
+                                width: 105%;
+                                height: 105%;
+                            }
+                        }
+                    }
+                }
+
+                &.buttons {
+                    div.row {
+                        height: 100%;
+                        width: 100%;
+                        .col-xs-6 {
+                            padding: unset;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            a {
+                                img {
+                                    max-height: 100%;
+                                    max-width: 100%;
+                                    object-fit: contain;
+                                    filter: drop-shadow(0px 0px 1px black);
+                                    &:active {
+                                        opacity: 0.5;
+                                    }
+                                }
+                            }
+                        }
+                        // div.col-xs-6.camera-switch, div.col-xs-6.hamburger {
+                        //     span.icon {
+                        //         color: white;
+                        //         font-size: 2.4em;
+                        //     }
+                        // }
+                        div.col-xs-6.hamburger {
+                            span.glyphicon {
+                                font-size: 2em;
+                            }
+                            div.hamburger-menu {
+                                > div {
+                                    width: 35px;
+                                    height: 5px;
+                                    background-color: white;
+                                    margin: 5px 0;
+                                    box-shadow: 0 0 3px black;
+                                }
+                            }
+                            a {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                > img {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

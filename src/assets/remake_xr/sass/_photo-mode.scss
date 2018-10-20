@@ -1,0 +1,54 @@
+#photo-mode {
+    width: 100%;
+    height: 100%;
+    div.shutter-wrapper, div.image-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        div.shutter {
+            width: 64px;
+            height: 64px;
+            background: transparent;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 3px black;
+        }
+        div.col-xs-4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: unset;
+            button {
+                color: white;
+                text-shadow: 0 0 3px black;
+                font-size: 1.1em;
+                width: 100%;
+                height: 64px;
+                margin-bottom: 10px;
+                margin-bottom: 10px;
+                padding: unset;
+                background: transparent;
+                border: unset;
+                text-align: center;
+            }
+        }
+    }
+
+    div.image-wrapper {
+        position: relative;
+        background: black;
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        div.row.confirm-buttons {
+            z-index: 2;
+        }
+    }
+}

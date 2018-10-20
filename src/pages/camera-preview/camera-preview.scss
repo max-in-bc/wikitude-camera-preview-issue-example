@@ -1,0 +1,18 @@
+html, body, ion-app, div.nav-decor, .ion-content, .app-root {
+  background-color: transparent !important;
+}
+
+page-camera-preview {
+  background-color: transparent;
+  color: white;
+  text-shadow: 0 0 4px darken(white, 24%);
+
+  ion-content {
+    background-color: transparent !important;
+
+    .scroll-content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

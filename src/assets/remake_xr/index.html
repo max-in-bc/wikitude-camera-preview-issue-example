@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>AR Scene</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="sass/style.css">
+        <script src="vue/dev.js"></script>
+        <script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="architect://architect.js"></script>
+        <script src="js/ade.js"></script>
+        <script src="js/build.js"></script>
+    </head>
+    <body>
+    <div id="vue-app">
+      <nav class="navbar navbar-default" id="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-4 circles">
+              <div class="circle clickable" onclick="javascript:app.openCameraPreview()">
+                <img src="assets/cam.jpg">
+              </div>
+            </div>
+            <div class="col-xs-4 title">
+            </div>
+            <div class="col-xs-4 circles">
+              <div class="circle clickable" onclick="javascript:app.hideWikitude()">
+                <img src="assets/min.jpg">
+              </div>
+              <div class="circle clickable" onclick="javascript:app.closeWikitude()">
+                <img src="assets/close.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="pre-loading">
+        <div class="loading-wrapper">
+            <img src="assets/loading/spinner_2.gif">
+        </div>
+    </div>
+    </body>
+</html>

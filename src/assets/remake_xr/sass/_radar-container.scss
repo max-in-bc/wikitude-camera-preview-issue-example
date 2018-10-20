@@ -1,0 +1,33 @@
+#radar-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    // border: 1px solid black;
+    // $radarHeight: calc(8vw + 8vh);
+    $radarHeight: 100px;
+    height: $radarHeight;
+    width: $radarHeight;
+    min-width: $radarHeight;
+    min-height: $radarHeight;
+    max-height: $radarHeight;
+    max-width: $radarHeight;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    // z-index: -1;
+    pointer-events: none;
+    // border: 1px solid black;
+    span {
+        width: 100%;
+        color: white;
+        text-shadow: 0px 0px 2px black;
+        text-align: center;
+        padding-top: 12px;
+        position: absolute;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

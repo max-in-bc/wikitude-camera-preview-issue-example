@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title id="title">Marker</title>
+        <style>
+            html {
+                /* border: 1px solid red; */
+                background: transparent;
+                width: 296px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+                background: transparent;
+            }
+            .wrapper {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .wrapper #label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            .wrapper #marker {
+                position: absolute;
+                left: 37%;
+                top: 37px;
+            }
+            .wrapper #place-title {
+                position: absolute;
+                top: 10px;
+                left: 72px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 194px;
+            }
+            .wrapper #distance {
+                position: absolute;
+                left: 72px;
+                top: 30px;
+            }
+            .wrapper #photo {
+                position: absolute;
+                top: 8px;
+                left: 6px;
+                border-radius: 50%;
+                height: 55px;
+                width: 55px;
+            }
+            p {
+                margin: unset;
+                color: white;
+            }
+            p#distance {
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img id="label">
+            <img id="marker">
+            <img id="photo">
+            <p id="place-title"></p>
+            <p id="distance"></p>
+        </div>
+    </body>
+    <script>
+        window.onload = function(e) {
+            var url_string = window.location.href;
+            var url = new URL(window.location.href);
+            console.log(url);
+            var title = url.searchParams.get('title');
+            var has_title = url.searchParams.get('has_title');
+            var label_image = url.searchParams.get('label_image');
+            console.log(label_image);
+            var marker_image = url.searchParams.get('marker_image');
+            var photo = url.searchParams.get('photo');
+            var photo_ref = url.searchParams.get('photoreference');
+            var max_width = url.searchParams.get('maxwidth');
+            console.log(photo);
+            var has_photo = url.searchParams.get('has_photo');
+            var distance = url.searchParams.get('distance');
+            document.getElementById('title').innerHTML = title;
+            document.getElementById('label').src = label_image;
+            document.getElementById('marker').src = marker_image;
+            document.getElementById('place-title').innerText = title;
+            document.getElementById('distance').innerText = distance;
+            document.getElementById('photo').src = photo + '&photoreference=' + photo_ref + '&maxwidth=' + max_width;
+        };
+    </script>
+</html>

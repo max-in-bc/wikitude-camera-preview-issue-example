@@ -1,0 +1,24 @@
+#vue-app {
+    display: none;
+    // opacity: 0;
+    pointer-events: none;
+    * {
+        pointer-events: auto;
+    }
+
+    #ar-content {
+        pointer-events: none;
+        #dynamic-tray-current-spot-container {
+            pointer-events: auto;
+        }
+        #experience-startup-wrapper {
+            pointer-events: none;
+            .experience-startup {
+                pointer-events: none;
+                .container-fluid {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

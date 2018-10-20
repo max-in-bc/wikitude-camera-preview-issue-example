@@ -1,14 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Debugging Camera Preview and Wikitude
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-row justify-content-around nowrap>
+    <button ion-button full margin (click)="openWikitude()">Open Wikitude</button>
+    <button ion-button full margin (click)="openCameraPreview()">Open CP</button>
+  </ion-row>
 </ion-content>
+

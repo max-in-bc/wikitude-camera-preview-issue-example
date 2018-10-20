@@ -1,0 +1,78 @@
+html, body {
+  width: fit-content;
+  height: fit-content;
+  margin: unset;
+  background: transparent; }
+
+.place-marker-1 {
+  display: inline-flex;
+  width: fit-content;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 284px;
+  height: 70px;
+  min-width: 284px;
+  min-height: 70px;
+  max-width: 284px;
+  max-height: 70px; }
+  .place-marker-1 div.label-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .place-marker-1 div.label-wrapper > img.label {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: inline-block;
+      padding: unset; }
+  .place-marker-1 div.text-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .place-marker-1 div.text-wrapper.left-padding {
+      padding-left: 65px; }
+    .place-marker-1 div.text-wrapper div.row {
+      width: 100%;
+      height: 50%;
+      margin: unset;
+      padding-left: 7px; }
+      .place-marker-1 div.text-wrapper div.row.title {
+        display: flex;
+        align-items: center; }
+        .place-marker-1 div.text-wrapper div.row.title span {
+          color: white;
+          font-size: 1.1em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: 3px; }
+      .place-marker-1 div.text-wrapper div.row.distance {
+        display: flex;
+        align-items: center; }
+        .place-marker-1 div.text-wrapper div.row.distance span {
+          color: white;
+          font-size: 1em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: 3px; }
+  .place-marker-1 img.place-photo {
+    position: absolute;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid white; }
+  .place-marker-1 img.place-marker {
+    position: absolute;
+    height: 80px;
+    width: 70px;
+    bottom: -50px; }
+
+/*# sourceMappingURL=place-marker.css.map */

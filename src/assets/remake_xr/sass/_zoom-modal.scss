@@ -1,0 +1,81 @@
+#zoom-modal {
+    background: $black-transparent-1;
+    .modal-dialog {
+        margin: 10px;
+        margin-top: 20%;
+        @media screen and (min-width: 768px) {
+            margin: 30px;
+            width: unset;
+            margin-top: 20%;
+        }
+        .modal-content {
+            border-radius: unset;
+            border: unset;
+            background: transparent;
+            box-shadow: unset !important;
+            -webkit-box-shadow: unset !important;
+            .col-xs-4 {
+                padding: unset;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .circle {
+                $height: calc(9vw + 9vh);
+                margin: unset;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid white;
+                border-radius: 50%;
+                height: $height;
+                width: $height;
+                min-height: $height;
+                min-width: $height;
+                background: $yellow-transparent;
+                span {
+                    color: gray;
+                    font-size: calc(1.5vw + 1.5vh);
+                }
+            }
+        }
+        .modal-header {
+            border-bottom: unset;
+            .row.view-text {
+                margin: unset;
+                margin-top: 15px;
+                > p {
+                    text-align: center;
+                    color: white;
+                    margin: unset;
+                    font-size: calc(1.2vw + 1.2vh);
+                }
+            }
+        }
+        .modal-body {
+            .container-fluid {
+                padding: unset;
+                .row {
+                    .col-xs-12 {
+                        padding-top: 2%;
+                        padding-bottom: 2%;
+                        button {
+                            width: 100%;
+                            height: 8vh;
+                            border: 1px solid white;
+                            background: transparent;
+                            border-radius: 5px;
+                            color: white;
+                            // font-weight: 100;
+                            // letter-spacing: 2px;
+                            font-size: calc(1.5vw + 1.5vh);
+                            &.active {
+                                background: $blue-transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

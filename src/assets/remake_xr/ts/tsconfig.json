@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "removeComments": false,
+        "target": "es5",
+        "module": "system",
+        "sourceMap": true,
+        "strict": true,
+        "outFile": "../js/build.js",
+        "lib": [
+            "es6", "es2015.promise", "dom", "dom.iterable", "scripthost"
+        ]
+    }
+}

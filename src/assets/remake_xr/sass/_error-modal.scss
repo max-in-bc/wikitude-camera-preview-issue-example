@@ -1,0 +1,43 @@
+#error-modal {
+    background: $black-transparent-1;
+    color: white;
+    .modal-dialog {
+        // margin: 10px;
+        margin-top: 20%;
+        height: 80%;
+        @media screen and (min-width: 768px) {
+            margin: 30px;
+            width: unset;
+            margin-top: 20%;
+        }
+        .modal-content {
+            border-radius: unset;
+            border: unset;
+            background: transparent;
+            box-shadow: unset !important;
+            -webkit-box-shadow: unset !important;
+            height: 100%;
+
+        }
+        .modal-header {
+            border-bottom: unset;
+            .modal-title {
+                text-align: center;
+            }
+            height: 10%;
+        }
+        .modal-body {
+            height: 80%;
+           .error-message {
+               font-family: monospace;
+           }
+        }
+        .modal-footer {
+            height: 10%;
+            border-top: unset;
+            button {
+                background: transparent;
+            }
+        }
+    }
+}
