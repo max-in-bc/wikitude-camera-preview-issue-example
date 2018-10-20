@@ -15,14 +15,15 @@
 
 <ion-content padding>
   <ion-row justify-content-around nowrap>
-    <button ion-button full margin transparent *ngIf="showing_wikitude" (click)="openCameraPreview()">Open CP</button>
+    <button ion-button full margin transparent  *ngIf="wikitude.is_hidden" (click)="openCameraPreview()">Open CP</button>
+    <button ion-button full margin transparent  *ngIf="wikitude.is_hidden" (click)="openBarcodeScanner()">Open BS</button>
   </ion-row>
 </ion-content>
 <ion-footer>
   <ion-toolbar >
     <ion-row justify-content-around nowrap>
-      <button ion-button full margin transparent *ngIf="showing_wikitude" (click)="closeWikitude()">Close Wikitude</button>
-      <button ion-button full margin transparent (click)="openWikitude()">Open Wikitude</button>
+      <button ion-button full margin transparent *ngIf="wikitude.is_hidden" (click)="closeWikitude()">Close Wikitude</button>
+      <button ion-button full margin transparent (click)="openWikitude()">{{wikitude.is_hidden ? 'Show' : 'Start'}} Wikitude</button>
     </ion-row>
   </ion-toolbar>
 </ion-footer>

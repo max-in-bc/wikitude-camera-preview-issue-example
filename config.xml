@@ -3,7 +3,7 @@
     <name>CameraPluginTest</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.111:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -85,5 +85,8 @@
     <plugin name="cordova-plugin-camera-preview" spec="^0.10.0" />
     <allow-navigation href="http://192.168.0.111:8100" />
     <plugin name="com.wikitude.phonegap.WikitudePlugin" spec="../../wikitude-cordova-plugin" />
-    <engine name="android" spec="~6.4.0" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="8.0.0">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
+    <engine name="android" spec="6.4.0" />
 </widget>

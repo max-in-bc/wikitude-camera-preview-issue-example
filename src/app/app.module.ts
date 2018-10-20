@@ -11,13 +11,16 @@ import { WikitudeProvider } from '../providers/wikitude/wikitude';
 import { CameraPreviewProvider } from '../providers/camera-preview/camera-preview';
 import {CameraPreviewPage} from "../pages/camera-preview/camera-preview";
 import {WikitudePage} from "../pages/wikitude/wikitude";
+import {BarcodeScannerPage} from "../pages/barcode-scanner/barcode-scanner";
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     WikitudePage,
-    CameraPreviewPage
+    CameraPreviewPage,
+    BarcodeScannerPage
   ],
   imports: [
     BrowserModule,
@@ -28,13 +31,15 @@ import {WikitudePage} from "../pages/wikitude/wikitude";
     MyApp,
     HomePage,
     WikitudePage,
-    CameraPreviewPage
+    CameraPreviewPage,
+    BarcodeScannerPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CameraPreview,
+    BarcodeScanner,
     WikitudeProvider,
     CameraPreviewProvider
   ]

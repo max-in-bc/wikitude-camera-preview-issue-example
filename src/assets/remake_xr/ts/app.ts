@@ -46,6 +46,11 @@ module Remake {
             action: 'show_wikitude_camera'
           });
         }
+        openBarcodeScanner(){
+          AR.platform.sendJSONObject({
+            action: 'open_barcode_scanner'
+          });
+        }
 
         private setLocationChanged() {
             if(window.hasOwnProperty('AR')) {
@@ -76,6 +81,9 @@ $(function(){
           closeWikitude: function() {
             app.closeWikitude();
           },
+          openBarcodeScanner: function(){
+            app.openBarcodeScanner();
+          }
 
         }
     });

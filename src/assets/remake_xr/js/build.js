@@ -38,6 +38,11 @@ var Remake;
                 action: 'show_wikitude_camera'
             });
         };
+        App.prototype.openBarcodeScanner = function () {
+            AR.platform.sendJSONObject({
+                action: 'open_barcode_scanner'
+            });
+        };
         App.prototype.setLocationChanged = function () {
             if (window.hasOwnProperty('AR')) {
                 AR.context.onLocationChanged = function (lat, lng, alt, accuracy) {
@@ -68,6 +73,9 @@ $(function () {
             closeWikitude: function () {
                 app.closeWikitude();
             },
+            openBarcodeScanner: function () {
+                app.openBarcodeScanner();
+            }
         }
     });
 });
